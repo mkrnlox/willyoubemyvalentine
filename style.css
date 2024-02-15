@@ -17,6 +17,52 @@ body{
     user-select: none;
 }
 
+.123123{
+	display: absolute;
+}
+
+.valentined{
+    margin: 20px;
+}
+
+.valentine{
+    font-weight: normal;
+}
+
+.gif1d{
+    margin: 50px;
+}
+
+.button_yesd, .button_nod{
+    color: white;
+    display: inline-block;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 5px 25px;
+    cursor: pointer;
+    margin: 50px;
+}
+
+.button_yesd.active, .button_nod.active{
+    opacity: 0.3;
+    transform: scale(0.9);
+    transition: all 0.2s ease;
+}
+
+.button_yes, .button_no{
+    font-weight: normal;
+}
+
+.button_yesd:hover, .button_nod:hover{
+    background: white;
+    color: black;
+}
+
+.yesd1{
+    display: inline;
+    margin: 20px;
+}
+
 .right{
     position: relative;
     float: left;
