@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;;
+    font-size: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.right{
+    float: left;
+    transform: scale(1.7);
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 2px 5px;
+    margin-left: 150px;
+    margin-top:40px;
+    font: bold;
+}
+
+.shop{
+    float: right;
+    width: 20%;
+    cursor: pointer;
+    margin-right: 70px;
+    margin:15px
+}
+
+.upgrade{
+    
+}
+
+.upgradebutton{
+    transform: scale(0.9);
+    transition: all .2s ease-in-out;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+
+.shopButton{
+    transition: all .2s ease-in-out;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 150px;
+    margin-top: 10px;
+}
+
+.upgradebutton, .achievement{
+    display: inline-block;
+}
+
+.shopButton:hover , .upgradebutton:hover{
+    background-color: white;
+    color: black;
+    transition: all .2s ease-in-out;
+}
+
+.shopButton:hover #amount{
+    
+}
+
+.shopButton #image{
+    width: 10%;
+}
+
+.shopButton img{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 64px;
+    width: 64px;
+}
+
+.shopButton #nameAndCost p, .upgradeClickd #nameAndCost p{
+    margin: 0px;
+    width: 60%;
+}
+
+.shopButton #nameAndCost p:first-of-type, .upgradeClickd #nameAndCost p:first-of-type{
+    font-size: 24px;
+}
+
+.shopButton #amount{
+    float: right;
+    font-size: 30px;
+    margin: 17px;
+}
+
+.heart{
+    width: 20%;
+    cursor: pointer;
+}
+
+.heart img{
+    margin-top: 50%;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.heart img:hover{
+    transform: scale(1.1);
+}
+
+.heart img:active{
+    transform: scale(0.99);
+}
+
+#upgrade img{
+    height: 64px;
+    width: 64px;
+}
+
+#achievementsContainer img{
+    height: 64px;
+    width: 64px;
+}
+
+.achievement{
+    transition: all .2s ease-in-out;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.achievementsContainer{
+    transition: all .2s ease-in-out;
+    width: 100%;
+}
+
+
+.clickingpower{
+    float: left;
+    margin-top: 31px;
+    transform: scale(1.1);
+    float: left;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 2px 7px;
+    margin-left: 130px;
+    font: bold;
+}
