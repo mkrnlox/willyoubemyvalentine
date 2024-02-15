@@ -195,17 +195,17 @@ var achievements = {
         "Valentine #∞"
     ],
     description: [
-        "love",
-        "Valentine #2",
-        "Valentine #3",
-        "Valentine #4",
-        "Valentine #5",
-        "Valentine #6",
-        "Valentine #7",
-        "Valentine #8",
-        "Valentine #9",
-        "Valentine #10",
-        "Valentine #∞"
+        "You are making me feel lovely",
+        "You are is important for me.",
+        "I wish one day I could hug you.",
+        "You are prettiest girl I ever seen.",
+        "Sleep is important, sleep well.",
+        "Your beauty is incalculable.",
+        "You deserve everything.",
+        "Your smile is beautiful, smile more often.",
+        "I wish we could go out just once.",
+        "If I could, I'd give anything to make you happy.",
+        "My love is as endless for you as this game."
     ],
     image: [
         "love1.png",
@@ -221,7 +221,7 @@ var achievements = {
         "love11.png"
     ],
     type: [
-        "click",
+        "score",
         "score",
         "score",
         "score",
@@ -234,17 +234,17 @@ var achievements = {
         "score"
     ],
     requirement: [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
+        100,
+        1000,
+        10000,
+        25000,
+        40000,
+        75000,
+        100000,
+        150000,
+        200000,
+        250000,
+        500000
     ],
     objectIndex:[
         -1,
