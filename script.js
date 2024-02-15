@@ -361,9 +361,59 @@ function resetGame(){
         location.reload();
 };
 
+function randomNumber(min, max){
+    return Math.round(Math.random() * (max - min) + min);
+}
+
+function fadeOut(element, duration, finalOpacity, callback){
+    let opacity = 1;
+
+    let elementFadingInterval = window.setInterval(function(){
+        opacity -= 50 / duration;
+
+        if (opacity <= finalOpacity){
+            clearInterval(elementFadingInterval);
+            callback();
+        }  
+
+        element.style.opacity = opacity;
+    }, 50)
+};
+
+function createNumberOnHeart(event){
+    let heart = document.getElementById("heart");
+
+    let heartOffset = heart.getBoundingClientRect();
+    let position = {
+        x: event.pageX - heartOffset.left + randomNumber(-5, 5),
+        y: event.pageY - heartOffset.top + randomNumber(-5, 5)
+    };
+
+    let element = document.createElement("div");
+    element.textContent = "+" + game.clickingPower;
+    element.classList.add('number', "unselectable");
+    element.style.left = position.x + "px";
+    element.style.top = position.y + "px";
+
+    heart.appendChild(element);
+
+    let movementInterval = window.setInterval(function(){
+        if (typeof element == "undefined" && element == null) clearInterval(movementInterval);
+
+        position.y--;
+        element.style.top = position.y + "px";
+    }, 10);
+
+    fadeOut(element, 3000, 0.5, function(){
+        element.remove();
+    });
+}
+
 document.getElementById("heart").addEventListener("click", function(){
     game.totalClicks++;
     game.addToScore(game.clickingPower);
+
+    createNumberOnHeart(event);
 }, false);
 
 window.onload = function(){
