@@ -122,8 +122,8 @@ body{
 
 .heart{
     position: absolute;
-    margin-top: 17%;
-    margin-left: 43.5%;
+    margin-top: 12%;
+    margin-left: 44%;
 }
 
 #heart{
@@ -162,7 +162,6 @@ body{
 }
 
 .achievement{
-    position: absolute;
     transition: all .2s ease-in-out;
     border: 2px solid white;
     border-radius: 10px;
