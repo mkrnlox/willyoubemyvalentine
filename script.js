@@ -3,6 +3,8 @@ var game = {
     totalScore: 0,
     totalClicks: 0,
     clickingPower: 1,
+    currentScale: 1,
+    clickCount: 0,
 
     addToScore: function(amount){
         this.score += amount;
@@ -452,3 +454,35 @@ document.addEventListener('keydown', function(event){
         event.preventDefault();
     }
 }, false);
+
+function hoverOnLeft(){
+    document.getElementById("button_yesd").classList.add("active")
+}
+function hoverOffLeft(){
+    document.getElementById("button_yesd").classList.remove("active")
+}
+function hoverOnRight(){
+    document.getElementById("button_nod").classList.add("active")
+}
+function hoverOffRight(){
+    document.getElementById("button_nod").classList.remove("active")
+}
+
+function hideButton() {
+    let button = document.getElementById('button_nod');
+    button.style.display = 'none';
+}
+
+function mamaumerla() {
+    const yes = document.getElementById("button_yesd")
+    yes.style.opacity = '1'
+    game.currentScale += 0.5;
+    yes.style.transform = `scale(${game.currentScale})`;
+    yes.style.transition = `all 0.2s ease`;
+
+    game.clickCount++;
+
+    if (game.clickCount >= 5) {
+      hideButton();
+    }
+}

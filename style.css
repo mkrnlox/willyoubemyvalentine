@@ -18,7 +18,7 @@ body{
 }
 
 .mama{
-    display: absolute;
+	display: absolute;
 }
 
 .valentined{
@@ -59,7 +59,6 @@ body{
 }
 
 .yesd1{
-    display: inline;
     margin: 20px;
 }
 
@@ -82,10 +81,6 @@ body{
     cursor: pointer;
     margin-right: 70px;
     margin:15px
-}
-
-.upgrade{
-    
 }
 
 .upgradebutton{
@@ -115,10 +110,6 @@ body{
     background-color: white;
     color: black;
     transition: all .2s ease-in-out;
-}
-
-.shopButton:hover #amount{
-    
 }
 
 .shopButton #image{
