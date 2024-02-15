@@ -275,7 +275,7 @@ var display = {
     updateShop: function(){
         document.getElementById("shop").innerHTML = "";
         for (i = 0; i < building.name.length; i++){
-            document.getElementById("shop").innerHTML += '<table onclick="building.purchase('+i+')" class="shopButton"><tr><td id="image"><img src="/images/'+building.image[i]+'"></td><td id="nameAndCost"><p>'+building.name[i]+'</p><p><span>'+building.cost[i]+' Hearts</span></p></td><td id="amount"><span id="cursors">'+building.count[i]+'</span></td></tr></table>';
+            document.getElementById("shop").innerHTML += '<table onclick="building.purchase('+i+')" class="shopButton"><tr><td id="image"><img src="./images/'+building.image[i]+'"></td><td id="nameAndCost"><p>'+building.name[i]+'</p><p><span>'+building.cost[i]+' Hearts</span></p></td><td id="amount"><span id="cursors">'+building.count[i]+'</span></td></tr></table>';
         }
     },
 
