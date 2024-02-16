@@ -34,9 +34,9 @@ var building = {
         "valentine.png",
         "autoclicker.png",
         "rainbow.png",
-        "love11,png"
+        "love11.png"
     ],
-    count: [0, 0, 0, 0],
+    count: [0, 0, 0, 0, 0],
     income: [
         1,
         5,
