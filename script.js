@@ -26,30 +26,26 @@ var building = {
         "Cursor",
         "Valentine",
         "Autoclicker",
-        "Rainbow",
-        "Endless love"
+        "Rainbow"
     ],
     image: [
         "cursor.png",
         "valentine.png",
         "autoclicker.png",
-        "rainbow.png",
-        "love11.png"
+        "rainbow.png"
     ],
     count: [0, 0, 0, 0, 0],
     income: [
         1,
         5,
         40,
-        100,
-        1000000000000000000000000
+        100
     ],
     cost: [
         15,
         100,
         1000,
-        2000,
-        0
+        2000
     ],
 
     purchase: function(index){
