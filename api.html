@@ -9,23 +9,6 @@
     <h1>API Proxy on GitHub Pages</h1>
     <button id="fetchDataBtn">Fetch Data</button>
     <div id="result"></div>
-
-    <script>
-        document.getElementById("fetchDataBtn").addEventListener("click", function() {
-            fetch('https://api.example.com/data', {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById("result").innerText = JSON.stringify(data, null, 2);
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
-        });
-    </script>
 </body>
+<script type="text/javascript" src="api.js"></script>
 </html>
